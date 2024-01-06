@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* nav links */
+
+nav ul li a:hover,
+nav ul li a:active{
+    color: #088178;
+}
+
+.underlineLink::after{
+    content: "";
+    width: 0;
+    height: 3px;
+    background: #088178;
+    display: block; 
+    margin-right: auto; 
+    transition: 0.5s;
+}
+
+.underlineLink:hover::after{
+    width: 100%;
+}
+
+
