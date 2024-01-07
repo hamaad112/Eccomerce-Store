@@ -21,9 +21,20 @@ nav ul li a:active{
 }
 
 .underlineLink:hover::after{
-    width: 100%;
+    width: 60%;
 }
 
+.active,.activeCart{
+    color: #088178;
+}
+
+.active::after{
+    content: '';
+    width: 60%;
+    height: 3px;
+    background: #088178;
+    display: block;
+}
 
 /* table scroll bar */
 
